@@ -1,0 +1,160 @@
+!SESSION 2011-08-01 21:42:44.155 -----------------------------------------------
+eclipse.buildId=M20100909-0800
+java.version=1.6.0_22
+java.vendor=Sun Microsystems Inc.
+BootLoader constants: OS=linux, ARCH=x86, WS=gtk, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.jee.product -product org.eclipse.epp.package.jee.product -product org.eclipse.epp.package.jee.product
+Command-line arguments:  -os linux -ws gtk -arch x86 -product org.eclipse.epp.package.jee.product -product org.eclipse.epp.package.jee.product -data /home/bhynte/workspace/NgixingApps -product org.eclipse.epp.package.jee.product
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2011-08-01 21:44:13.241
+!MESSAGE Failed to load properties file for project 'NgixingApps'
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2011-08-01 21:57:02.655
+!MESSAGE Failed to load properties file for project 'NgixingApps'
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2011-08-01 22:47:13.035
+!MESSAGE AndroidManifest: Ignoring unknown 'ma' XML element
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2011-08-01 22:47:14.366
+!MESSAGE AndroidManifest: Ignoring unknown 'Ma' XML element
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2011-08-01 23:07:42.382
+!MESSAGE AndroidManifest: Ignoring unknown 'uses-library' XML element
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2011-08-01 23:07:43.484
+!MESSAGE AndroidManifest: Ignoring unknown 'uses-library' XML element
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2011-08-01 23:07:52.769
+!MESSAGE AndroidManifest: Ignoring unknown 'uses-library' XML element
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2011-08-01 23:07:54.086
+!MESSAGE AndroidManifest: Ignoring unknown 'uses-library' XML element
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2011-08-01 23:07:54.997
+!MESSAGE AndroidManifest: Ignoring unknown 'uses-library' XML element
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2011-08-01 23:07:55.671
+!MESSAGE AndroidManifest: Ignoring unknown 'uses-library' XML element
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2011-08-01 23:09:52.548
+!MESSAGE AndroidManifest: Ignoring unknown 'uses-library' XML element
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2011-08-01 23:09:52.550
+!MESSAGE AndroidManifest: Ignoring unknown 'uses-library' XML element
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2011-08-01 23:10:45.062
+!MESSAGE AndroidManifest: Ignoring unknown 'com.google.android.maps.MapVie' XML element
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2011-08-01 23:10:45.367
+!MESSAGE AndroidManifest: Ignoring unknown 'com.google.android.maps.MapV' XML element
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2011-08-01 23:10:45.660
+!MESSAGE AndroidManifest: Ignoring unknown 'com.google.android.maps.Ma' XML element
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2011-08-01 23:10:46.135
+!MESSAGE AndroidManifest: Ignoring unknown 'com.google.android.maps.' XML element
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2011-08-01 23:10:46.857
+!MESSAGE AndroidManifest: Ignoring unknown 'com.google.android.maps.ma' XML element
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2011-08-01 23:10:48.254
+!MESSAGE AndroidManifest: Ignoring unknown 'com.google.android.maps.mapv' XML element
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2011-08-01 23:10:48.551
+!MESSAGE AndroidManifest: Ignoring unknown 'com.google.android.maps.mapvie' XML element
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2011-08-01 23:13:06.483
+!MESSAGE AndroidManifest: Ignoring unknown 'uses-library' XML element
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2011-08-01 23:13:07.477
+!MESSAGE AndroidManifest: Ignoring unknown 'uses-library' XML element
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2011-08-01 23:14:20.046
+!MESSAGE AndroidManifest: Ignoring unknown 'com.google.android.maps.MapView' XML element
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2011-08-01 23:32:21.270
+!MESSAGE AndroidManifest: Ignoring unknown 'us' XML element
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2011-08-01 23:32:21.426
+!MESSAGE AndroidManifest: Ignoring unknown 'user' XML element
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2011-08-01 23:32:29.941
+!MESSAGE AndroidManifest: Ignoring unknown 'us' XML element
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2011-08-01 23:32:30.117
+!MESSAGE AndroidManifest: Ignoring unknown 'user' XML element
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2011-08-01 23:32:31.769
+!MESSAGE AndroidManifest: Ignoring unknown 'us' XML element
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2011-08-01 23:32:31.931
+!MESSAGE AndroidManifest: Ignoring unknown 'user' XML element
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2011-08-01 23:32:32.682
+!MESSAGE AndroidManifest: Ignoring unknown 'uses' XML element
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2011-08-01 23:34:06.397
+!MESSAGE AndroidManifest: Ignoring unknown 'co' XML element
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2011-08-01 23:34:07.731
+!MESSAGE AndroidManifest: Ignoring unknown 'com.' XML element
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2011-08-01 23:34:08.644
+!MESSAGE AndroidManifest: Ignoring unknown 'com.go' XML element
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2011-08-01 23:34:08.936
+!MESSAGE AndroidManifest: Ignoring unknown 'com.goog' XML element
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2011-08-01 23:34:09.142
+!MESSAGE AndroidManifest: Ignoring unknown 'com.google' XML element
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2011-08-01 23:34:10.128
+!MESSAGE AndroidManifest: Ignoring unknown 'com.google.a' XML element
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2011-08-01 23:34:10.310
+!MESSAGE AndroidManifest: Ignoring unknown 'com.google.and' XML element
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2011-08-01 23:34:10.679
+!MESSAGE AndroidManifest: Ignoring unknown 'com.google.andro' XML element
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2011-08-01 23:34:10.985
+!MESSAGE AndroidManifest: Ignoring unknown 'com.google.android' XML element
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2011-08-01 23:34:11.568
+!MESSAGE AndroidManifest: Ignoring unknown 'com.google.android.m' XML element
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2011-08-01 23:34:12.716
+!MESSAGE AndroidManifest: Ignoring unknown 'com.google.android.map' XML element
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2011-08-01 23:34:13.018
+!MESSAGE AndroidManifest: Ignoring unknown 'com.google.android.maps.' XML element
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2011-08-01 23:34:14.244
+!MESSAGE AndroidManifest: Ignoring unknown 'com.google.android.maps.Ma' XML element
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2011-08-01 23:34:15.494
+!MESSAGE AndroidManifest: Ignoring unknown 'com.google.android.maps.MapV' XML element
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2011-08-01 23:34:15.906
+!MESSAGE AndroidManifest: Ignoring unknown 'com.google.android.maps.MapVue' XML element
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2011-08-01 23:34:16.266
+!MESSAGE AndroidManifest: Ignoring unknown 'com.google.android.maps.MapVue' XML element
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2011-08-01 23:34:16.573
+!MESSAGE AndroidManifest: Ignoring unknown 'com.google.android.maps.MapV' XML element
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2011-08-01 23:34:17.142
+!MESSAGE AndroidManifest: Ignoring unknown 'com.google.android.maps.MapVie' XML element
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2011-08-01 23:34:19.932
+!MESSAGE AndroidManifest: Ignoring unknown 'com.google.android.maps.MapView' XML element
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2011-08-01 23:34:29.511
+!MESSAGE AndroidManifest: Ignoring unknown 'com.google.android.maps.MapView' XML element
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2011-08-01 23:34:33.779
+!MESSAGE AndroidManifest: Ignoring unknown 'com.google.android.maps.MapView' XML element
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2011-08-01 23:40:23.019
+!MESSAGE AndroidManifest: Ignoring unknown 'com.google.android.maps.MapView' XML element

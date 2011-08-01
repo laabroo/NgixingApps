@@ -1,0 +1,28 @@
+package com.laabroo.android.ngixingapps;
+
+import java.util.ArrayList;
+
+import com.google.android.maps.MapView;
+
+import android.app.Activity;
+import android.location.LocationListener;
+import android.location.LocationManager;
+import android.os.Bundle;
+
+public class NgixingAppsActivity extends Activity {
+  private MapView mapView;
+  private LocationManager locationManager;
+  private LocationListener locationListener;
+  private ArrayList<Place> places = new ArrayList<Place>();
+  
+    @Override
+    public void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.main);
+        
+    }
+    
+    private void initMap(){
+    	
+    }
+}

@@ -1,0 +1,162 @@
+package com.laabroo.android.ngixingapps;
+
+import java.util.ArrayList;
+import java.util.Iterator;
+import java.util.List;
+
+import com.google.android.maps.GeoPoint;
+import com.google.android.maps.MapActivity;
+import com.google.android.maps.MapView;
+import com.google.android.maps.Overlay;
+import com.google.android.maps.OverlayItem;
+
+import android.app.Activity;
+import android.content.Context;
+import android.graphics.drawable.Drawable;
+import android.location.Location;
+import android.location.LocationListener;
+import android.location.LocationManager;
+import android.os.Bundle;
+
+public class NgixingAppsActivity extends MapActivity {
+	private MapView mapView;
+	private LocationManager locationManager;
+	private LocationListener locationListener;
+	private ArrayList<Place> places = new ArrayList<Place>();
+
+	@Override
+	public void onCreate(Bundle savedInstanceState) {
+		super.onCreate(savedInstanceState);
+		setContentView(R.layout.main);
+		initLocation();
+		initMap();
+		initialLocationManager();
+
+	}
+
+	private void initLocation() {
+		places.add(new Place(-7.802118, 110.390882, 1,
+				"Pamela 1, Kusuma Negara"));
+		places.add(new Place(-7.805817, 110.38835, 2,
+				"Universitas Teknologi Yogyakarta Fakultas Ekonomi"));
+		places.add(new Place(-7.815404, 110.387793, 3, "RS. Islam Hidayatulah"));
+		places.add(new Place(-7.798235, 110.383533, 4, "Uad Kampus 1"));
+
+		places.add(new Place(-7.820506, 110.388415, 5, "Uad Kampus 2"));
+	}
+
+	private void initMap() {
+		mapView = (MapView) findViewById(R.id.mymap);
+		mapView.displayZoomControls(true);
+		mapView.getController().setZoom(15);
+
+	}
+
+	private void initialLocationManager() {
+		locationManager = (LocationManager) getSystemService(Context.LOCATION_SERVICE);
+		locationListener = new LocationListener() {
+
+			public void onStatusChanged(String provider, int status,
+					Bundle extras) {
+				// TODO Auto-generated method stub
+
+			}
+
+			public void onProviderEnabled(String provider) {
+				// TODO Auto-generated method stub
+
+			}
+
+			public void onProviderDisabled(String provider) {
+				// TODO Auto-generated method stub
+
+			}
+
+			public void onLocationChanged(Location location) {
+				// TODO Auto-generated method stub
+				displayLocationToMap(location);
+
+			}
+		};
+
+		locationManager.requestLocationUpdates(LocationManager.GPS_PROVIDER, 0,
+				1000, locationListener);
+	}
+
+	protected void displayLocationToMap(Location location) {
+		List<Overlay> overlays = mapView.getOverlays();
+
+		// first remove old overlay
+		if (overlays.size() > 0) {
+			for (Iterator<Overlay> iterator = overlays.iterator(); iterator
+					.hasNext();) {
+				iterator.next();
+				iterator.remove();
+			}
+		}
+
+		// transform the location to a geopoint
+		GeoPoint geopoint = new GeoPoint((int) (location.getLatitude() * 1E6),
+				(int) (location.getLongitude() * 1E6));
+		GeoPoint myposition = geopoint;
+		Location locationA = new Location("point A");
+		Location locationB = new Location("point B");
+		locationA.setLatitude(geopoint.getLatitudeE6() / 1E6);
+		locationA.setLongitude(geopoint.getLongitudeE6() / 1E6);
+		// initialize icon
+		Drawable icon = getResources().getDrawable(R.drawable.mappin);
+		icon.setBounds(0, 0, icon.getIntrinsicWidth(),
+				icon.getIntrinsicHeight());
+
+		// create my overlay and show it
+		MyItemizedOverlay overlay = new MyItemizedOverlay(icon, this);
+		OverlayItem item = new OverlayItem(geopoint, "I'am in here.", "Lat:"
+				+ locationA.getLatitude() + "\nLng:" + locationA.getLongitude());
+		overlay.addItem(item);
+		mapView.getOverlays().add(overlay);
+		for (int i = 0; i < places.size(); i++) {
+			geopoint = new GeoPoint((int) (places.get(i).lat * 1E6),
+					(int) (places.get(i).lon * 1E6));
+			locationB.setLatitude(geopoint.getLatitudeE6() / 1E6);
+			locationB.setLongitude(geopoint.getLongitudeE6() / 1E6);
+
+			double distance = locationA.distanceTo(locationB);
+
+			if (distance < 10000) {
+				//
+				// if (places.get(i).catetory == 1) {
+				// icon = getResources().getDrawable(R.drawable.marker);
+				// } else if (places.get(i).catetory == 2) {
+				// icon = getResources().getDrawable(R.drawable.marker);
+				// } else if (places.get(i).catetory == 3) {
+				// icon = getResources().getDrawable(R.drawable.marker);
+				// } else if (places.get(i).catetory == 4) {
+				// icon = getResources().getDrawable(R.drawable.marker);
+				// } else if (places.get(i).catetory == 5) {
+				// icon = getResources().getDrawable(R.drawable.marker);
+				// }
+
+				icon = getResources().getDrawable(R.drawable.marker);
+
+				icon.setBounds(0, 0, icon.getIntrinsicWidth(),
+						icon.getIntrinsicHeight());
+				overlay = new MyItemizedOverlay(icon, this);
+				item = new OverlayItem(geopoint, places.get(i).locName, "Lat:"
+						+ places.get(i).lat + "\nLng:" + places.get(i).lon
+						+ "\n Jarak:" + distance + "m");
+				overlay.addItem(item);
+				mapView.getOverlays().add(overlay);
+			}
+
+		}
+		// move to location
+		mapView.getController().animateTo(myposition);
+
+		// redraw map
+		mapView.postInvalidate();
+	}
+
+	protected boolean isRouteDisplayed() {
+		return false;
+	}
+}
